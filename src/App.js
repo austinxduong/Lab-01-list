@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import CreatureList from './CreatureList';
 import creatures from './Creatures';
+import Footer from './Footer';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         </main>
         
       
+        <Footer/>
       </div>
     );
   }

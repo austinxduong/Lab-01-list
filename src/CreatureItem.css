@@ -17,3 +17,8 @@
     object-fit: contain;
 }
 
+.CreatureItem p {
+    margin: 0;
+    font-size: .9rem;
+}
+

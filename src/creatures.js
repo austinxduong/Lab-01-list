@@ -57,15 +57,6 @@ const creatures = [
   },
   {
     url:
-        'https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003',
-    title: 'Cera',
-    description:
-        "Three horns but still, horns. And who doesn't like The Land Before Time?",
-    keyword: 'triceratops',
-    horns: 3
-  },
-  {
-    url:
         'https://ae01.alicdn.com/kf/HTB18GwSQVXXXXaZaXXXq6xXFXXXh/Animal-Cosplay-Costume-Narwhal-Onesie-Mens-Womens-Cartoon-Whale-Pajamas.jpg',
     title: 'Narwhal costume',
     description: 'A woman wearing a blue narwhal costume',
@@ -105,34 +96,10 @@ const creatures = [
   },
   {
     url:
-        'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/28476658_9c97f35096_o.jpg',
-    title: 'Mouflon',
-    description: 'Those horns though',
-    keyword: 'mouflon',
-    horns: 2
-  },
-  {
-    url: 'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/addax.jpg',
-    title: 'Addax',
-    description:
-        "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
-    keyword: 'addax',
-    horns: 2
-  },
-  {
-    url:
         'https://cbsnews3.cbsistatic.com/hub/i/r/2013/03/05/5b414225-a645-11e2-a3f0-029118418759/thumbnail/620x350/2d4cf24685b45c22912e64d2004fec8d/Baby_Mouflon_Wild_Sheep.jpg',
     title: 'Baby mouflon',
     description: 'The cuteness that is a baby mouflon asleep',
     keyword: 'mouflon',
-    horns: 2
-  },
-  {
-    url:
-        'https://cdn.modernfarmer.com/wp-content/uploads/2014/08/chameleon.jpg',
-    title: "Happy Jackson's Chameleon",
-    description: 'These are really common in Hawaii',
-    keyword: 'chameleon',
     horns: 2
   },
   {
