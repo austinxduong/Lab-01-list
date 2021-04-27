@@ -11,12 +11,12 @@ export default class CatSearch extends Component {
         <select>
           <option value="">sort...</option>
           <option value="name"> by name</option>
-          <option value="horns">by lives</option>
+          <option value="horns">by horns</option>
         </select>
 
 
 
-        <button>🔎</button>
+        <button>👀</button>
       </form>
     );
   }
