@@ -10,7 +10,7 @@ class Header extends Component {
         <img
           className="logo"
           alt="creatures"
-          src="http://www.zooborns.com/.a/6a010535647bf3970b0223c84d5959200c-800wi"
+          src="./heart.png"
         />
 
         <h1>Creatures</h1>
