@@ -6,8 +6,6 @@ import creatures from './Creatures';
 import Footer from './Footer';
 import CreatureSearch from './CreatureSearch';
 
-
-
 class App extends Component {
 
 
