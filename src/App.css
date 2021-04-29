@@ -1,5 +1,14 @@
 .App {
   display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  background: whitesmoke;
+  grid-gap: 20px;
+
+}
+
+.App main {
+  overflow: auto;
+  padding: 5px;
 }
 
 /* TODO: remove **/
