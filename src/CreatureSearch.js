@@ -3,12 +3,17 @@ import './CreatureSearch.css';
 
 export default class Search extends Component {
     state = {
-      namefilter: '',
+      nameFilter: '',
+      hornFilter: '',
       sortField: ''
     }
 
     handleNameFilter = ({ target }) => {
-      this.setState({ namefilter: target.value });
+      this.setState({ nameFilter: target.value });
+    }
+
+    handleHornFilter = ({ target }) => {
+      this.setState({ hornFilter: target.value });
     }
 
     handlerSortField = ({ target }) => {
@@ -22,31 +27,42 @@ export default class Search extends Component {
 
     }
 
+    componentDidUpdate(prevProp, prevState) {
+      if (prevState !== this.state) {
+        this.props.onSearch(this.state);
+      }
+    }
+
     render() {
       const { nameFilter, sortField } = this.state;
 
       return (
-        <form className="CreatureSearch"onSubmit={this.handleSubmit}>
+        <form className="CreatureSearch" onSubmit={this.handleSubmit}>
 
           <input
             name="nameFilter"
             value={nameFilter}
             onChange={this.handleNameFilter}
           />
-
+        
+        
           <select
             name="sortField"
             value={sortField}
-            onChange={this.handlerSortField}>
+            onChange={this.handleSearchChange}
+          >
+        
 
-            <option value="">All</option>
+        
+            
+
+
+            <option value="">all</option>
             <option value="name">by name</option>
             <option value="horns">by horns</option>
           </select>
 
           <button>👀</button>
-
-
 
         </form>
       );

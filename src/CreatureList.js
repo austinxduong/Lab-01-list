@@ -6,7 +6,7 @@ import './CreatureList.css';
 class CreatureList extends Component {
 
   render() {
-    const creatures = this.props.creatures;
+    const creatures = this.props.creature;
 
     return (
       <ul className="CreatureList">
