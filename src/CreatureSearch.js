@@ -16,7 +16,7 @@ export default class Search extends Component {
       this.setState({ hornFilter: target.value });
     }
 
-    handlerSortField = ({ target }) => {
+    handleSearchChange = ({ target }) => {
       this.setState({ sortField: target.value });
     }
 
@@ -35,6 +35,7 @@ export default class Search extends Component {
 
     render() {
       const { nameFilter, sortField } = this.state;
+      // const { horns } = this.props;
 
       return (
         <form className="CreatureSearch" onSubmit={this.handleSubmit}>
@@ -44,23 +45,30 @@ export default class Search extends Component {
             value={nameFilter}
             onChange={this.handleNameFilter}
           />
-        
-        
-          <select
+
+          <select>
+            name="sortField"
+            value={ sortField }
+            onChange={this.handleSearchChange}
+            <option value="">Sort...</option>
+            <option value='name'>by name</option>
+            <option value='horns'>by horns</option>
+          </select>
+            
+
+          
+
+          {/* <select
             name="sortField"
             value={sortField}
             onChange={this.handleSearchChange}
           >
-        
+              
 
-        
-            
-
-
-            <option value="">all</option>
+            <option value="">sort...</option>
             <option value="name">by name</option>
             <option value="horns">by horns</option>
-          </select>
+          </select> */}
 
           <button>👀</button>
 

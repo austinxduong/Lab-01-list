@@ -6,7 +6,7 @@ import creaturesData from './Creatures';
 import Footer from './Footer';
 import CreatureSearch from './CreatureSearch';
 
-const creatureTypes = [...new Set(creaturesData.map(c => c.type))];
+const hornSearch = [...new Set(creaturesData.map(c => c.horns))];
 
 class App extends Component {
   state = {
@@ -41,7 +41,7 @@ class App extends Component {
   
         <Header/>
 
-        <CreatureSearch types={creatureTypes} onSearch={this.handleSearch}/>
+        <CreatureSearch types={hornSearch} onSearch={this.handleSearch}/>
 
         <main>
           <CreatureList creature={creatures}/>
